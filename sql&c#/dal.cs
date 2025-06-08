@@ -57,5 +57,9 @@ internal class DAL
             var into = cmd.ExecuteNonQuery();
 
         }
+        catch(Exception ex)
+        {
+            Console.WriteLine($"err: {ex}");
+        }
     }
 }
